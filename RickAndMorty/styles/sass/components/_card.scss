@@ -1,0 +1,120 @@
+.card{
+    margin: 10px;
+    width: 100%;
+    max-width: 364px;
+    padding: 20px 15px;
+    border: 0.1px solid #bfbfbf;
+    border-radius: 25px;
+    border-left: 1px solid #bfbfbf;
+    border-right: 1px solid #bfbfbf;
+    border-bottom: 5px solid #bfbfbf;
+
+    @include adaptTo('not-mobile'){
+        margin: 10px;
+        padding: 10px;
+        background-color: $septenary-color;
+        max-height: 390px;
+        min-height: 320px;
+    }
+
+
+    @include adaptTo('desktop-m'){
+        width: calc(31% - 5px);
+    }
+
+    @include adaptTo('desktop-l'){
+        width: calc(33% - 5px);
+    }
+
+    @include adaptTo('desktop-xl'){
+        width: calc(33% - 20px);
+    }
+
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title{
+        width: 70%;
+        text-align: left;
+        font-weight: 700;
+        font-size: 14px;
+        padding: 20px;
+        color: $nine-color;
+        
+
+    }
+
+    &__status{
+        width: 70px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 14px;
+        background-color: #81CE7F;
+    }
+
+    &__status--alive{
+        width: 70px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 14px;
+        background-color: #81CE7F;
+    }
+    &__status--dead{
+        width: 70px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 14px;
+        background-color: #D85252;
+    }
+    &__status--unknown{
+        width: 70px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 14px;
+        background-color: #BBBBBB;
+    }
+
+    &__img{
+        width: 160px;
+    }
+
+    &__info-container{
+        display: flex;
+        align-items: center;
+
+    }
+
+    &__content{
+        padding: 20px;
+    }
+        
+    &__info-title{
+        font-weight: 700;
+        font-size: 10px;
+        color: $tertiary-color;
+        
+    }
+
+    &__info{
+        font-size: 14px;
+        max-width: 180px;
+        color: $quaternary-color;
+        
+    }
+
+    &__link{
+        text-decoration: none;
+        display: block;
+        font-size: 12px;
+        width: 100%;
+        padding: 5px;
+        background-color: #EEE4F1;
+        color: #643762;
+        text-align: center;
+        font-weight: 700;
+        border-radius: 100px;
+    }
+}

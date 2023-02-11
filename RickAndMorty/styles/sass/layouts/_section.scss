@@ -1,0 +1,33 @@
+.section{
+    &__title{
+        font-family: 'Poppins';
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $tenth-color;
+        height: 50px;
+        color: $primary-color;
+        font-weight: 700;
+
+        @include adaptTo('not-mobile'){
+            font-size: 20px;
+        }
+    }
+
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    &__container-location{
+        width: 100%;
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}

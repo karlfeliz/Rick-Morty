@@ -1,0 +1,24 @@
+@import 'utilities/variables';
+@import 'utilities/mixins';
+@import 'base/typo';
+@import 'base/reset';
+@import 'layouts/footer';
+@import 'layouts/main';
+@import 'layouts/header';
+@import 'layouts/section-home';
+@import 'layouts/nav';
+@import 'layouts/section';
+@import 'components/card';
+@import 'components/detail';
+@import 'components/location';
+@import 'components/locations';
+@import 'components/episode';
+@import 'components/episodes';
+
+
+
+
+body{
+    background-color: $septenary-color;
+    color: $secondary-color;
+}

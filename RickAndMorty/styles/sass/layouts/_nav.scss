@@ -1,0 +1,42 @@
+.nav{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+
+    @include adaptTo('tablet'){
+        flex-wrap: nowrap;    
+        flex-direction: column;     
+    }
+    @include adaptTo('desktop'){
+        background-color: $primary-color; 
+        flex-wrap: nowrap;  
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    &__link{
+        font-size: 25px;
+        font-weight: 700;
+        text-decoration: none;
+        color: $primary-color;
+        background-color: $secondary-color;
+        border-radius: 100px;
+        margin-bottom: 30px;
+        width: 100%;
+        cursor: pointer;
+        padding: 30px;
+        
+        @include adaptTo('tablet'){
+            padding: 50px 120px;    
+            font-size: 30px;
+        }
+
+        @include adaptTo('desktop'){
+            margin: 40px;
+            padding: 30px 20px;
+        }
+        
+    }
+}

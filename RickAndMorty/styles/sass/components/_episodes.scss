@@ -1,0 +1,79 @@
+.episodes{
+    width: 100%;
+    
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__card{
+        margin: 10px;
+        width: 100%;
+        max-width: 364px;
+        padding: 20px 15px;
+        border: 0.1px solid #bfbfbf;
+        border-radius: 25px;
+        border-left: 1px solid #bfbfbf;
+        border-right: 1px solid #bfbfbf;
+        border-bottom: 5px solid #bfbfbf;
+        
+    }
+
+    &__card-title{
+        width: 277px;
+        border-radius: 50px;
+        height: 52px;
+        background-color: #F3F3F3;
+        color: #4D1F5B;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 18px;
+
+    }
+
+
+    &__card-middle{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    &__card-info-title{
+        margin: 0;
+        font-weight: 700;
+        font-size: 10px;
+        color: $tertiary-color;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__card-info-1{
+        width: 160px;
+        margin: 0;
+        font-size: 14px;
+        max-width: 180px;
+        color: $quaternary-color;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    &__card-info{
+        text-decoration: none;
+        display: block;
+        font-size: 12px;
+        width: 100%;
+        padding: 5px;
+        background-color: #EEE4F1;
+        color: #643762;
+        text-align: center;
+        font-weight: 700;
+        border-radius: 100px;
+        margin: 5px 0px;
+    }
+}

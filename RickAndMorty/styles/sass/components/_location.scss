@@ -1,0 +1,53 @@
+.location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__header{
+        background-color: $senary-color;
+        color: $primary-color;
+        height: 50px;
+        width: 270px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100px;
+        margin: 30px;
+    }
+
+    &__title{
+        background-color: $senary-color;
+        color: $primary-color;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    &__info-title{
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 5px;
+        color: #A6A6A6;
+
+    }
+
+    &__info{
+        font-size: 18px;
+        margin-bottom: 20px;
+        background-color: $eleventh-color;
+        color: $quaternary-color;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+        padding: 5px 10px;
+        width: 100%;
+
+    }
+
+    &__info-episode-list{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+        
+}

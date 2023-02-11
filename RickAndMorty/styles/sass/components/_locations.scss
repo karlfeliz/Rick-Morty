@@ -1,0 +1,129 @@
+.locations{
+    width: 100%;
+    
+    &__top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title{
+        text-align: center;
+        font-weight: 700;
+        font-size: 20px;
+        color: #471D4F;
+        width: 100%;
+        padding: 5px;
+        background-color: #BEA1C7;
+    }
+
+    &__button{
+        display: flex;
+        align-items: center;
+        background-color: $quinary-color;
+        border-radius: 100px;
+        border-bottom: 3px solid $tertiary-color;
+        width: 250px;
+        height: 40px;
+        padding: 10px;
+        margin: 15px;
+    }
+
+    &__search{
+        color: $primary-color;
+        box-sizing: 20px;
+        font-size: 25px;
+
+    }
+
+    &__query{
+        width: 180px;
+        border: none;
+        padding-left: 20px;
+        border-left: 2px solid $tertiary-color;
+    }
+    
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__card{
+        margin: 10px;
+        width: 100%;
+        max-width: 364px;
+        padding: 20px 15px;
+        border: 0.1px solid #bfbfbf;
+        border-radius: 25px;
+        border-left: 1px solid #bfbfbf;
+        border-right: 1px solid #bfbfbf;
+        border-bottom: 5px solid #bfbfbf;
+        
+    }
+
+    &__card-title{
+        width: 277px;
+        border-radius: 50px;
+        height: 52px;
+        background-color: #F3F3F3;
+        color: #4D1F5B;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 18px;
+
+    }
+
+    &__card-container{
+        display: grid;
+        grid-template-areas: "div div";
+    }
+
+    &__card-middle{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__card-middle--1{
+        border-right: 2px solid $tertiary-color;
+    }
+
+    &__card-info-title{
+        width: 150px;
+        margin: 0;
+        font-weight: 700;
+        font-size: 10px;
+        color: $tertiary-color;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__card-info{
+        width: 150px;
+        margin: 0;
+        font-size: 14px;
+        max-width: 180px;
+        color: $quaternary-color;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    &__card-link{
+        text-decoration: none;
+        display: block;
+        font-size: 12px;
+        width: 100%;
+        padding: 5px;
+        background-color: #EEE4F1;
+        color: #643762;
+        text-align: center;
+        font-weight: 700;
+        border-radius: 100px;
+        margin: 15px 0px;
+    }
+}

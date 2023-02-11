@@ -1,0 +1,44 @@
+.section-home{
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include adaptTo('desktop'){
+        padding: 0px;
+    }
+
+    &__title{
+        font-size: 14px;
+        font-family: 'Poppins';
+        margin: 30px auto;
+        @include adaptTo('desktop'){
+            font-size: 28px;
+        }       
+    }
+
+    &__description{
+        font-size: 20px;
+        color: $quaternary-color;
+        @include adaptTo('desktop'){
+            font-size: 20px;
+            max-width: 350px;
+            margin-top: 20px;
+
+        }
+        @include adaptTo('tablet'){
+            font-size: 20px;
+            max-width: 350px;
+            margin-top: 20px;
+
+        } 
+    }
+
+    &__break{
+        width: 200px;
+        border-bottom: 2px solid $primary-color;
+        margin: 25px;
+    }
+
+}
